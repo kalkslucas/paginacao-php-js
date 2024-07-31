@@ -15,20 +15,7 @@ require_once 'conexao.php';
   <div class="row my-4">
     <div class="col d-flex flex-column align-items-center">
       <h1>Lista de Funcionários</h1>
-      <table class="table table-secondary" border="1" style="margin: 15px; width: 400px;">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>NOME</th>
-            <th>EMAIL</th>
-            <th>SEXO</th>
-            <th>DEPARTAMENTO</th>
-            <th>ADMISSAO</th>
-            <th>SALARIO</th>
-            <th>CARGO</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
+      <span class="listaFuncionarios"></span>
     </div>
   </div>
   
