@@ -71,7 +71,9 @@ for($pag_ant = $pagina - $page_interval; $pag_ant <= $pagina - 1; $pag_ant++){
   $dados .= " <li class='page-item active'><a class='page-link' href='#'>$pagina</a></li>";
 
 for($pag_dep = $pagina + 1; $pag_dep <= $pagina + $page_interval; $pag_dep++){
-  $dados .= "<li class='page-item'><a class='page-link' href='#' onclick='listarFuncionarios($pag_dep)'>$pag_dep</a></li>";
+  if($pag_dep <= $qtdPaginas){
+    $dados .= "<li class='page-item'><a class='page-link' href='#' onclick='listarFuncionarios($pag_dep)'>$pag_dep</a></li>";
+  }
 } 
 
   $dados .= "<li class='page-item'><a class='page-link' href='#' onclick='listarFuncionarios($qtdPaginas)'>Último</a></li>
