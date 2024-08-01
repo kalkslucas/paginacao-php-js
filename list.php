@@ -56,9 +56,8 @@ extract($row_pg);
 $qtdPaginas = ceil($QTD_ID / $num_registros_pagina);
 $dados .= "<p class='text-center'>Página: $pagina | Número de páginas: $qtdPaginas</p>";
 
+//Páginas a mais para ser exibido na paginação
 $page_interval = 2;
-$first_page = max($pagina - $page_interval, 1);
-$last_page = min($qtdPaginas, $pagina + $page_interval);
 
 $dados .= "<nav aria-label='Page navigation example'>
             <ul class='pagination justify-content-center'>
